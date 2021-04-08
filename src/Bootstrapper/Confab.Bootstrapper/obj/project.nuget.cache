@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "DdV38biog1hr8lvQiVO/G3LiWo3RFjtHAKeLxVp02uLMqDrnAaLdfBaRH+JokeuxRIjhpodFnji+rTVJKU0w8w==",
+  "success": true,
+  "projectFilePath": "C:\\Repo\\Confab\\src\\Bootstrapper\\Confab.Bootstrapper\\Confab.Bootstrapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

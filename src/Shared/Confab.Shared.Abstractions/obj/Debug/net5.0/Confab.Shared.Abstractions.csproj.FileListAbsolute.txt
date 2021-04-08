@@ -1,0 +1,12 @@
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\bin\Debug\net5.0\Confab.Shared.Abstractions.deps.json
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\bin\Debug\net5.0\Confab.Shared.Abstractions.dll
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\bin\Debug\net5.0\ref\Confab.Shared.Abstractions.dll
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\bin\Debug\net5.0\Confab.Shared.Abstractions.pdb
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\obj\Debug\net5.0\Confab.Shared.Abstractions.csprojAssemblyReference.cache
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\obj\Debug\net5.0\Confab.Shared.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\obj\Debug\net5.0\Confab.Shared.Abstractions.AssemblyInfoInputs.cache
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\obj\Debug\net5.0\Confab.Shared.Abstractions.AssemblyInfo.cs
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\obj\Debug\net5.0\Confab.Shared.Abstractions.csproj.CoreCompileInputs.cache
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\obj\Debug\net5.0\Confab.Shared.Abstractions.dll
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\obj\Debug\net5.0\ref\Confab.Shared.Abstractions.dll
+C:\Repo\Confab\src\Shared\Confab.Shared.Abstractions\obj\Debug\net5.0\Confab.Shared.Abstractions.pdb

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "XRM5Q8KDE65lL/+ocYa3/o8DpyzYE7uXvsuSngoo7ILAmHxV+OpXTOtaBEcePI65ujK5HcJ4EQCz/apToyfrbA==",
+  "success": true,
+  "projectFilePath": "C:\\Repo\\Confab\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mateusz\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

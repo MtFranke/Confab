@@ -1,0 +1,15 @@
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net5.0\Confab.Shared.Infrastructure.deps.json
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net5.0\Confab.Shared.Infrastructure.dll
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net5.0\ref\Confab.Shared.Infrastructure.dll
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net5.0\Confab.Shared.Infrastructure.pdb
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net5.0\Confab.Shared.Infrastructure.csprojAssemblyReference.cache
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net5.0\Confab.Shared.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net5.0\Confab.Shared.Infrastructure.AssemblyInfoInputs.cache
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net5.0\Confab.Shared.Infrastructure.AssemblyInfo.cs
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net5.0\Confab.Shared.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net5.0\Confab.Shared.Infrastructure.dll
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net5.0\ref\Confab.Shared.Infrastructure.dll
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net5.0\Confab.Shared.Infrastructure.pdb
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net5.0\Confab.Shared.Abstractions.dll
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net5.0\Confab.Shared.Abstractions.pdb
+C:\Repo\Confab\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net5.0\Confab.Shared.Infrastructure.csproj.CopyComplete
