@@ -46,7 +46,7 @@ namespace Confab.Modules.Conferences.Core.Services
                 LogoUrl = dto.LogoUrl,
                 ParticipantLimit = dto.ParticipantLimit
             });
-    }
+        }
 
         public async Task<ConferenceDetailsDto> GetAsync(Guid id)
         {
@@ -79,7 +79,7 @@ namespace Confab.Modules.Conferences.Core.Services
             conference.LogoUrl = dto.LogoUrl;
             conference.ParticipantLimit = dto.ParticipantLimit;
             conference.Location = dto.Location;
-            
+
             await _conferenceRepository.UpdateAsync(conference);
         }
 
