@@ -91,7 +91,7 @@ namespace Confab.Modules.Conferences.Core.Services
                 throw new ConferenceNotFoundException(id);
             }
 
-            if (await _conferenceDeletionPolicy.CanDeleteAsync(conference))
+            if (await _conferenceDeletionPolicy.CanDeleteAsync(conference) is false)
             {
                 throw new ConferenceNotFoundException(id);
             }

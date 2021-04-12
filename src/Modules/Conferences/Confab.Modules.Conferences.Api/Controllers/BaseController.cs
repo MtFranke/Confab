@@ -3,7 +3,7 @@
 namespace Confab.Modules.Conferences.Api.Controllers
 {
     [ApiController]
-    [Route(BasePath)]
+    [Route(BasePath + "/[controller]")]
     internal class BaseController : ControllerBase
     {
         protected const string BasePath = "conferences-module";

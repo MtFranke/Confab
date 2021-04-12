@@ -41,19 +41,27 @@ namespace Confab.Modules.Conferences.Core.Services
             }
 
             var dto = Map<HostDetailsDto>(host);
-            dto.Conferences = host.Conferences.Select(x => new ConferenceDto()
+
+            if (dto.Conferences is not null)
             {
-                Id = x.Id,
-                HostId = x.HostId,
-                Name = x.Name,
-                From = x.From,
-                To = x.To,
-                Location = x.Location,
-                Description = x.Description,
-                LogoUrl = x.LogoUrl,
-                Host = x.Host,
-                ParticipantLimit = x.ParticipantLimit
-            }).ToList();
+                dto.Conferences = host.Conferences.Select(x => new ConferenceDto()
+                {
+                    Id = x.Id,
+                    HostId = x.HostId,
+                    Name = x.Name,
+                    From = x.From,
+                    To = x.To,
+                    Location = x.Location,
+                    Description = x.Description,
+                    LogoUrl = x.LogoUrl,
+                    Host = x.Host,
+                    ParticipantLimit = x.ParticipantLimit
+                }).ToList();
+            }
+            else
+            {
+                dto.Conferences = new ();
+            }
 
             return dto;
         }
@@ -95,7 +103,7 @@ namespace Confab.Modules.Conferences.Core.Services
         }
 
         private static T Map<T>(Host host) where T : HostDto, new()
-            => new T
+            => new T()
             {
                 Id = host.Id,
                 Name = host.Name,

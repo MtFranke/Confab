@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Confab.Modules.Conferences.Core.DTO;
@@ -7,42 +7,42 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Confab.Modules.Conferences.Api.Controllers
 {
-    internal class HostController : BaseController
+    internal class ConferencesController : BaseController
     {
-        private readonly IHostService _hostService;
+        private readonly IConferenceService _conferenceService;
 
-        public HostController(IHostService hostService)
+        public ConferencesController(IConferenceService conferenceService)
         {
-            _hostService = hostService;
+            _conferenceService = conferenceService;
         }
 
         [HttpGet("{id:guid}")]
-        public async Task<ActionResult<HostDetailsDto>> Get(Guid id) 
-            => OkOrNotFound(await _hostService.GetAsync(id));
+        public async Task<ActionResult<ConferenceDetailsDto>> Get(Guid id) 
+            => OkOrNotFound(await _conferenceService.GetAsync(id));
         
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<HostDetailsDto>>> BrowseAsync() 
-            => Ok(await  _hostService.BrowseAsync());
+            => Ok(await  _conferenceService.BrowseAsync());
 
         [HttpPost]
-        public async Task<ActionResult> AddAsync(HostDto dto)
+        public async Task<ActionResult> AddAsync(ConferenceDetailsDto dto)
         {
-            await _hostService.AddAsync(dto);
+            await _conferenceService.AddAsync(dto);
             return CreatedAtAction(nameof(Get), new {id = dto.Id}, null);
         }
         
         [HttpPut("{id:guid}")]
-        public async Task<ActionResult> UpdateAsync(Guid id, HostDetailsDto dto)
+        public async Task<ActionResult> UpdateAsync(Guid id, ConferenceDetailsDto dto)
         {
             dto.Id = id;
-            await _hostService.UpdateAsync(dto);
+            await _conferenceService.UpdateAsync(dto);
             return NoContent();
         }
 
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<HostDetailsDto>> DeleteAsync(Guid id)
         {
-            await _hostService.DeleteAsync(id);
+            await _conferenceService.DeleteAsync(id);
             return NoContent();
         }
 

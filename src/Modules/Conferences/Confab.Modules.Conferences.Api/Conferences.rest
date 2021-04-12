@@ -1,0 +1,71 @@
+@url = http://localhost:5000/conferences-module
+@hostId = 0875bb54-b111-4421-8852-91e36593bae3
+@conferenceId = 12a6597d-b5ec-4690-84fe-67a43fa83cee
+
+###
+GET {{url}}
+
+###
+POST {{url}}/hosts
+Content-Type: application/json
+
+{
+    "name":"host #1",
+    "description":"lorem ipsum"
+}
+
+###
+GET {{url}}/hosts
+
+###
+GET {{url}}/hosts/{{hostId}}
+
+###
+PUT {{url}}/hosts/{{hostId}}
+Content-Type: application/json
+
+{
+    "name":"host #2"
+}
+
+###
+DELETE {{url}}/hosts/{{hostId}}
+
+###
+POST {{url}}/conferences
+Content-Type: application/json
+
+{
+    "hostId":"{{hostId}}",
+    "name":"conference #1",
+    "description":"lorem ipsum",
+    "location":"Poland",
+    "from":"2021-05-01",
+    "to":"2021-05-02",
+    "participantLimit":100,
+    "logoUrl":null
+
+}
+
+###
+GET {{url}}/conferences
+
+###
+GET {{url}}/conferences/{{conferenceId}}
+
+###
+PUT {{url}}/conferences/{{conferenceId}}
+Content-Type: application/json
+
+{
+    "name":"conf #2",
+    "description":"lorem ipsum",
+    "location":"Poland",
+    "from":"2021-05-01",
+    "to":"2021-05-02",
+    "participantLimit":100,
+    "logoUrl":null
+}
+
+###
+DELETE {{url}}/conferences/{{conferenceId}}
