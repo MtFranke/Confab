@@ -1,5 +1,5 @@
 @url = http://localhost:5000/conferences-module
-@hostId = 0875bb54-b111-4421-8852-91e36593bae3
+@hostId = cef842a8-178c-4341-9c0b-83457b0048bd
 @conferenceId = 12a6597d-b5ec-4690-84fe-67a43fa83cee
 
 ###
@@ -10,7 +10,7 @@ POST {{url}}/hosts
 Content-Type: application/json
 
 {
-    "name":"host #1",
+    "name":"host #2",
     "description":"lorem ipsum"
 }
 
