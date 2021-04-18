@@ -6,6 +6,7 @@ using Confab.Shared.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
@@ -16,14 +17,14 @@ namespace Confab.Bootstrapper
         private readonly IList<IModule> _modules;
         private readonly IList<Assembly> _assemblies;
 
-        public Startup()
+        public Startup(IConfiguration configuration)
         {
-            _assemblies = ModuleLoader.LoadAssemblies();
+            _assemblies = ModuleLoader.LoadAssemblies(configuration);
             _modules = ModuleLoader.LoadModules(_assemblies);
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddInfrastructure();
+            services.AddInfrastructure(_assemblies, _modules);
             foreach (var module in _modules)
             {
                 module.Register(services);
