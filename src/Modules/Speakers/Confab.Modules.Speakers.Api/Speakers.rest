@@ -1,0 +1,4 @@
+@url = http://localhost:5000/speakers-module
+
+###
+GET {{url}}

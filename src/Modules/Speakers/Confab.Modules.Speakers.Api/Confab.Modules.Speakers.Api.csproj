@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+    
+
+    <ItemGroup>
+      <None Remove="module.speakers.json" />
+      <Content Include="module.speakers.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Shared\Confab.Shared.Abstractions\Confab.Shared.Abstractions.csproj" />
+      <ProjectReference Include="..\Confab.Modules.Speakers.Core\Confab.Modules.Speakers.Core.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -22,6 +22,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Conferences.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Conferences.Core", "src\Modules\Conferences\Confab.Modules.Conferences.Core\Confab.Modules.Conferences.Core.csproj", "{681A1CF3-C3D7-479F-B2EA-E70376B60A2C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Speakers", "Speakers", "{90E1B2A4-F7CA-4BF3-82E5-CCF9F6051FA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Speakers.Api", "src\Modules\Speakers\Confab.Modules.Speakers.Api\Confab.Modules.Speakers.Api.csproj", "{AB4F869C-D896-4A19-9E61-23809AD2BDD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Speakers.Core", "src\Modules\Speakers\Confab.Modules.Speakers.Core\Confab.Modules.Speakers.Core.csproj", "{ECF666FE-19EF-400B-95B9-3A1161077FB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +43,9 @@ Global
 		{FEBE2B70-FB29-4E6B-884F-793C0FCF341C} = {3DE04214-1B4D-4E46-80D8-54C2C9E5E73F}
 		{D077101A-3D2B-444B-B803-B3F93F4C5C17} = {FEBE2B70-FB29-4E6B-884F-793C0FCF341C}
 		{681A1CF3-C3D7-479F-B2EA-E70376B60A2C} = {FEBE2B70-FB29-4E6B-884F-793C0FCF341C}
+		{90E1B2A4-F7CA-4BF3-82E5-CCF9F6051FA5} = {3DE04214-1B4D-4E46-80D8-54C2C9E5E73F}
+		{AB4F869C-D896-4A19-9E61-23809AD2BDD7} = {90E1B2A4-F7CA-4BF3-82E5-CCF9F6051FA5}
+		{ECF666FE-19EF-400B-95B9-3A1161077FB0} = {90E1B2A4-F7CA-4BF3-82E5-CCF9F6051FA5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B78EEC3B-090B-464B-A193-F5798E2F4961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -59,5 +68,13 @@ Global
 		{681A1CF3-C3D7-479F-B2EA-E70376B60A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{681A1CF3-C3D7-479F-B2EA-E70376B60A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{681A1CF3-C3D7-479F-B2EA-E70376B60A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB4F869C-D896-4A19-9E61-23809AD2BDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4F869C-D896-4A19-9E61-23809AD2BDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4F869C-D896-4A19-9E61-23809AD2BDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4F869C-D896-4A19-9E61-23809AD2BDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF666FE-19EF-400B-95B9-3A1161077FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF666FE-19EF-400B-95B9-3A1161077FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF666FE-19EF-400B-95B9-3A1161077FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF666FE-19EF-400B-95B9-3A1161077FB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
