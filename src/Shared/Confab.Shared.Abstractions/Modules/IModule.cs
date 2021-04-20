@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Confab.Shared.Abstractions.Modules
@@ -7,7 +8,7 @@ namespace Confab.Shared.Abstractions.Modules
     {
         string Name { get; }
         string Path { get; }
-
+        IEnumerable<string> Policies => null;
         void Register(IServiceCollection collection);
         void Use(IApplicationBuilder app);
     }
