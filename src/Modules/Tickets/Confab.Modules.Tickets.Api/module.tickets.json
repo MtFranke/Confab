@@ -2,7 +2,7 @@
   "tickets": {
     "module": {
       "name": "Tickets",
-      "enabled": false
+      "enabled": true
     }
   }
 }

@@ -1,12 +1,14 @@
 @url = http://localhost:5000/conferences-module
-@hostId = cef842a8-178c-4341-9c0b-83457b0048bd
+@hostId = cc1e815c-ea0b-4830-a2a8-62f8bfd38fca
 @conferenceId = 12a6597d-b5ec-4690-84fe-67a43fa83cee
+@accessToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZjhlNjM2NC0wOGMxLTQ4ZjEtYjAzZC0wMWE3NzcyNGFmYjQiLCJ1bmlxdWVfbmFtZSI6IjZmOGU2MzY0LTA4YzEtNDhmMS1iMDNkLTAxYTc3NzI0YWZiNCIsImp0aSI6IjIwMThlYTJhLTQwODQtNDk5Yi1hOWY2LWEyZjM3ZDdlZTZjZCIsImlhdCI6IjE2MTkwOTQyMDEyMTgiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJ1c2VyIiwicGVybWlzc2lvbnMiOlsiY29uZmVyZW5jZXMiLCJob3N0cyIsInNwZWFrZXJzIiwidGlja2V0cyIsInVzZXJzIl0sIm5iZiI6MTYxOTA5NDIwMSwiZXhwIjoxNjE5MTMwMjAxLCJpc3MiOiJjb25mYWIifQ.bQTlQaO24xbGjNl9MVf5wJiNCr2r91TL2v8rQ_jvZfA
 
 ###
 GET {{url}}
 
 ###
 POST {{url}}/hosts
+Authorization: Bearer {{accessToken}}
 Content-Type: application/json
 
 {
@@ -22,6 +24,7 @@ GET {{url}}/hosts/{{hostId}}
 
 ###
 PUT {{url}}/hosts/{{hostId}}
+Authorization: Bearer {{accessToken}}
 Content-Type: application/json
 
 {
@@ -33,6 +36,7 @@ DELETE {{url}}/hosts/{{hostId}}
 
 ###
 POST {{url}}/conferences
+Authorization: Bearer {{accessToken}}
 Content-Type: application/json
 
 {
