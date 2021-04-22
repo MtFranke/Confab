@@ -74,14 +74,15 @@ namespace Confab.Shared.Infrastructure
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<IContext>(sp => sp.GetRequiredService<IContextFactory>().Create());
             services.AddSingleton<IContextFactory, ContextFactory>();
-            
+
             services.AddErrorHandling();
             services.AddEvents(assemblies);
             services.AddSingleton<IClock,UtcClock>();
             services.AddHostedService<AppInitializer>();
             services.AddAuth(modules);
             services.AddModuleInfo(modules);
-            
+            services.AddModuleRequests(assemblies);
+
             services
                 .AddControllers()
                 .ConfigureApplicationPartManager(manager =>
