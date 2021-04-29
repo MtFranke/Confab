@@ -40,6 +40,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Tickets.Api"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Tickets.Core", "src\Modules\Tickets\Confab.Modules.Tickets.Core\Confab.Modules.Tickets.Core.csproj", "{2890F631-4F2C-4EB1-A763-85C3CD8AA372}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Agendas", "Agendas", "{F15CF5FB-E3F9-40A4-8544-AF5D76E407DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Agendas.Domain", "src\Modules\Agendas\Confab.Modules.Agendas.Domain\Confab.Modules.Agendas.Domain.csproj", "{BE40952D-5570-4D84-ACEA-D9347EA3049F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Agendas.Application", "src\Modules\Agendas\Confab.Modules.Agendas.Application\Confab.Modules.Agendas.Application.csproj", "{B4242FA4-15B3-4C5C-B6B6-A3E739A3A0EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Agendas.Infrastructure", "src\Modules\Agendas\Confab.Modules.Agendas.Infrastructure\Confab.Modules.Agendas.Infrastructure.csproj", "{328051E2-E0CD-466B-B481-0850F974DC85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Agendas.Api", "src\Modules\Agendas\Confab.Modules.Agendas.Api\Confab.Modules.Agendas.Api.csproj", "{0C215F58-EA44-472F-904F-002D8A85E0E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +74,11 @@ Global
 		{8379D626-9287-4F8F-8E38-877F7441D859} = {3DE04214-1B4D-4E46-80D8-54C2C9E5E73F}
 		{5D8BD6A7-CEC4-47B0-9993-D6DC7E06BC1E} = {8379D626-9287-4F8F-8E38-877F7441D859}
 		{2890F631-4F2C-4EB1-A763-85C3CD8AA372} = {8379D626-9287-4F8F-8E38-877F7441D859}
+		{F15CF5FB-E3F9-40A4-8544-AF5D76E407DE} = {3DE04214-1B4D-4E46-80D8-54C2C9E5E73F}
+		{BE40952D-5570-4D84-ACEA-D9347EA3049F} = {F15CF5FB-E3F9-40A4-8544-AF5D76E407DE}
+		{B4242FA4-15B3-4C5C-B6B6-A3E739A3A0EE} = {F15CF5FB-E3F9-40A4-8544-AF5D76E407DE}
+		{328051E2-E0CD-466B-B481-0850F974DC85} = {F15CF5FB-E3F9-40A4-8544-AF5D76E407DE}
+		{0C215F58-EA44-472F-904F-002D8A85E0E8} = {F15CF5FB-E3F9-40A4-8544-AF5D76E407DE}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B78EEC3B-090B-464B-A193-F5798E2F4961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -110,5 +125,21 @@ Global
 		{2890F631-4F2C-4EB1-A763-85C3CD8AA372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2890F631-4F2C-4EB1-A763-85C3CD8AA372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2890F631-4F2C-4EB1-A763-85C3CD8AA372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE40952D-5570-4D84-ACEA-D9347EA3049F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE40952D-5570-4D84-ACEA-D9347EA3049F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE40952D-5570-4D84-ACEA-D9347EA3049F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE40952D-5570-4D84-ACEA-D9347EA3049F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4242FA4-15B3-4C5C-B6B6-A3E739A3A0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4242FA4-15B3-4C5C-B6B6-A3E739A3A0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4242FA4-15B3-4C5C-B6B6-A3E739A3A0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4242FA4-15B3-4C5C-B6B6-A3E739A3A0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328051E2-E0CD-466B-B481-0850F974DC85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328051E2-E0CD-466B-B481-0850F974DC85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328051E2-E0CD-466B-B481-0850F974DC85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328051E2-E0CD-466B-B481-0850F974DC85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C215F58-EA44-472F-904F-002D8A85E0E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C215F58-EA44-472F-904F-002D8A85E0E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C215F58-EA44-472F-904F-002D8A85E0E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C215F58-EA44-472F-904F-002D8A85E0E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

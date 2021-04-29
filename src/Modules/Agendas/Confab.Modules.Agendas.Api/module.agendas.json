@@ -1,0 +1,8 @@
+{
+  "agendas": {
+    "module": {
+      "enabled": true,
+      "name": "Agendas"
+    }
+  }
+}
