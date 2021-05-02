@@ -12,6 +12,7 @@ namespace Confab.Shared.Infrastructure.Exceptions
                 .AddScoped<ErrorHandlerMiddleware>()
                 .AddSingleton<IExceptionToResponseMapper, ExceptionToResponseMapper>()
                 .AddSingleton<IExceptionCompositionRoot, ExceptionCompositionRoot>();
+            
             return services;
         }
 
