@@ -7,10 +7,7 @@ using Confab.Modules.Conferences.Core.Entities;
 using Confab.Modules.Conferences.Core.Exceptions;
 using Confab.Modules.Conferences.Core.Policies;
 using Confab.Modules.Conferences.Core.Repositories;
-using Confab.Modules.Conferences.Messages.Events;
-using Confab.Shared.Abstractions.Events;
 using Confab.Shared.Abstractions.Messaging;
-using Confab.Shared.Abstractions.Modules;
 using ConferenceCreated = Confab.Modules.Conferences.Core.Events.ConferenceCreated;
 
 namespace Confab.Modules.Conferences.Core.Services

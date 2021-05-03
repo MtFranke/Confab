@@ -8,4 +8,13 @@
       <ProjectReference Include="..\Confab.Modules.Agendas.Infrastructure\Confab.Modules.Agendas.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="module.agendas.development.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="module.agendas.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

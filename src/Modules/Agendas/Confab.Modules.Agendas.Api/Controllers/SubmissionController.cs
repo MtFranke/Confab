@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Confab.Modules.Agendas.Application.Submissions.Commands;
+using Confab.Modules.Agendas.Application.Submissions.DTO;
+using Confab.Modules.Agendas.Application.Submissions.Queries;
 using Confab.Modules.Conferences.Api.Controllers;
 using Confab.Shared.Abstractions.Commands;
+using Confab.Shared.Abstractions.Queries;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Confab.Modules.Agendas.Api.Controllers
@@ -10,17 +13,23 @@ namespace Confab.Modules.Agendas.Api.Controllers
     internal class SubmissionController : BaseController
     {
         private readonly ICommandDispatcher _commandDispatcher;
+        private readonly IQueryDispatcher _queryDispatcher;
 
-        public SubmissionController(ICommandDispatcher commandDispatcher)
+        public SubmissionController(ICommandDispatcher commandDispatcher, IQueryDispatcher queryDispatcher)
         {
             _commandDispatcher = commandDispatcher;
+            _queryDispatcher = queryDispatcher;
         }
 
+        [HttpGet("{id:guid}")]
+        public async Task<ActionResult<SubmissionDto>> GetAsync(Guid id)
+            => OkOrNotFound(await _queryDispatcher.QueryAsync(new GetSubmission(){Id = id}));
+        
         [HttpPost]
         public async Task<ActionResult> CreateAsync(CreateSubmission submission)
         {
             await _commandDispatcher.SendAsync(submission);
-            return new CreatedResult("Get", new { });
+            return CreatedAtAction(nameof(GetAsync).ToString(), new { });
         }
 
         [HttpPut("{id:guid}/approve")]

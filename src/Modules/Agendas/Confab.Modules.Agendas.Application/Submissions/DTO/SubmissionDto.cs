@@ -7,8 +7,8 @@ namespace Confab.Modules.Agendas.Application.Submissions.DTO
     {
         public Guid Id { get; set; }
         public Guid ConferenceId { get; set; }
-        public Guid Title { get; set; }
-        public Guid Description { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
         public int Level { get; set; }
         public string Status { get; set; }
         public IEnumerable<string> Tags { get; set; }
